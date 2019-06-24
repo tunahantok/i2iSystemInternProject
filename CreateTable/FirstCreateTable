@@ -1,0 +1,25 @@
+create table internTable
+(
+ID number,
+FIRST_NAME VARCHAR2(50),
+LAST_NAME VARCHAR2(50),
+UNIVERSITY VARCHAR2(50),
+DEPARTMENT VARCHAR2(50),
+CLASS NUMBER,
+CITY VARCHAR2(50)
+);
+
+SELECT * FROM internTable;
+
+
+INSERT INTO internTable (ID,FIRST_NAME,LAST_NAME,UNIVERSITY,DEPARTMENT,CLASS,CITY)VALUES(1,'Tolga','Çatalpınar','Bilkent Üniversitesi','Bilgisayar Mühendisliği', 2,'Ankara');
+INSERT INTO internTable (ID,FIRST_NAME,LAST_NAME,UNIVERSITY,DEPARTMENT,CLASS,CITY)VALUES(2,'Aysegül','Karahançer','Yıldız Teknik Üniversitesi','Bilgisayar Öğretmenliği', 3,'Kayseri');
+INSERT INTO internTable (ID,FIRST_NAME,LAST_NAME,UNIVERSITY,DEPARTMENT,CLASS,CITY)VALUES(3,'Gizemnur','Taşkın','İstanbul Teknik Üniversitesi','Bilişim Mühendisliği', 3,'İstanbul');
+INSERT INTO internTable (ID,FIRST_NAME,LAST_NAME,UNIVERSITY,DEPARTMENT,CLASS,CITY)VALUES(4,'Melih Sinan','Doğrul','Yıldız Teknik Üniversitesi','Bilgisayar Mühendisliği', 3,'Trabzon');
+INSERT INTO internTable (ID, FIRST_NAME, LAST_NAME, UNIVERSITY, DEPARTMENT, CLASS, CITY) VALUES (5, 'Servet', 'Tartar', 'Munzur Üniversitesi','Bilgisayar Mühendisliği', 4, 'Mersin');
+INSERT INTO internTable (ID, FIRST_NAME,LAST_NAME , UNIVERSITY, DEPARTMENT, CLASS, CITY) VALUES (6, 'Eren', 'Yalçın', 'Bilkent Uni','Bilgisayar Mühendisliği', 3, 'Ankara');
+INSERT INTO internTable (ID, FIRST_NAME, LAST_NAME, UNIVERSITY, DEPARTMENT, CLASS, CITY) VALUES (7, 'Yunus', 'Arslan', 'Odtü','Bilgisayar Mühendisliği', 2, 'Antalya');
+INSERT INTO internTable (ID, FIRST_NAME, LAST_NAME, UNIVERSITY, DEPARTMENT, CLASS, CITY) VALUES (8, 'Ümit', 'Atılgan', 'Yildiz Teknik Üniversitesi ','Matematik Mühendisliği', 4, 'Çorum');
+INSERT INTO internTable (ID, FIRST_NAME, LAST_NAME, UNIVERSITY, DEPARTMENT, CLASS, CITY) VALUES (9, 'Beytullah', 'Atik', 'Karabük Üniversitesi','Bilgisayar Mühendisliği', 3, 'Edirne');
+INSERT INTO internTable (ID, FIRST_NAME, LAST_NAME, UNIVERSITY, DEPARTMENT, CLASS, CITY) VALUES (10, 'Davut', 'Kurt', 'inönü Üniversitesi','Bilgisayar Mühendisliği', 4, 'Malatya');
+INSERT INTO internTable (ID, FIRST_NAME, LAST_NAME, UNIVERSITY, DEPARTMENT, CLASS, CITY) VALUES (11, 'Özge Nur', 'Koç', 'Trakya Üniversitesi','Bilgisayar Mühendisliği', 4, 'Afyonkarahisar');
