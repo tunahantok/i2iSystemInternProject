@@ -1,0 +1,22 @@
+CREATE TABLE EMP
+  AS (SELECT * FROM EMPLOYEES);
+  
+INSERT INTO EMP(EMPLOYEE_ID, 
+                LAST_NAME, 
+                EMAIL, 
+                HIRE_DATE, 
+                JOB_ID) 
+VALUES(207, 
+       'Tunahan', 
+       'tunahantok', 
+       '17/06/2019',
+       'IT_PROG');
+
+UPDATE EMP
+SET FIRST_NAME = 'Tunahan'
+WHERE EMPLOYEE_ID = 207;
+
+DELETE FROM EMP
+WHERE EMPLOYEE_ID = 207;
+
+SELECT * FROM EMP;
