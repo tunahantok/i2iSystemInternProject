@@ -1,0 +1,23 @@
+set SERVEROUTPUT ON;
+--show university without procedure;
+
+ACCEPT vs_name1 char prompt 'Enter name : ';
+
+DECLARE
+       show_univ VARCHAR2(200);
+       BEGIN
+       SELECT UNIVERSITY INTO show_univ FROM INTERN
+       WHERE FIRST_NAME='&vs_name1';
+       DBMS_OUTPUT.PUT_line(University of selected name: ' || show_uni);
+       END;
+       /    
+       --with procedure ;
+       CREATE OR REPLACE PROCEDURE show_university(vs_first IN VARCHAR2) IS
+       show_  varchar2(200);
+       BEGIN
+       SELECT UNIVERSITY INTO show_uni FROM INTERN
+       WHERE FIRST_NAME=vs_first;
+       DBMS_OUTPUT.PUT_line('University of selected name : ' || show_uni1);
+       END;
+       /    
+       execute show_university('TUNAHAN');
