@@ -1,0 +1,16 @@
+package junit;
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class findPrimeNumbersTest {
+	findPrimeNumbers test = new findPrimeNumbers();
+	
+	@Test
+	public void test() {
+		assertEquals(true,test.isPrime(1009));
+		
+	}
+	
+
+}
