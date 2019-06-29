@@ -1,0 +1,19 @@
+DECLARE
+    university varchar(50);
+BEGIN
+    SELECT university INTO university FROM intern where first_name = 'Tunahan';
+    DBMS_OUTPUT.PUT_LINE(university);
+END;
+/
+
+
+CREATE OR REPLACE PROCEDURE show_university(f_name IN VARCHAR) 
+IS
+    uni varchar(50);
+BEGIN 
+    SELECT university INTO uni FROM intern where first_name = f_name;
+    DBMS_OUTPUT.PUT_LINE(uni);
+END;
+/
+
+EXEC show_university('Tunahan');
