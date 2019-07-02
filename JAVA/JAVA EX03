@@ -1,0 +1,26 @@
+package controller;
+
+public class Calculator_withSOAPUI {
+	
+	
+	
+	public static double Add (double NumberC, double NumberD)
+		{
+			return NumberC+ NumberD;
+		}
+	public static double Substract (double NumberC, double NumberD)
+		{
+			return NumberC - NumberD;
+		}
+	public static double Multiply (double NumberC, double NumberD)
+		{
+			return NumberC * NumberD;
+		}
+	public static double Divide (double NumberC, double NumberD)
+		{
+			return NumberC/NumberD;
+		}
+
+	
+
+}
