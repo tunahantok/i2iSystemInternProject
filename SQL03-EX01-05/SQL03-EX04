@@ -1,0 +1,22 @@
+WITH
+emp_table AS (
+    SELECT FIRST_NAME, LAST_NAME, JOB_ID, DEPARTMENT_ID
+    FROM HR.EMPLOYEES
+    WHERE JOB_ID LIKE 'S%'),
+job_titles AS (
+    SELECT JOB_ID, JOB_TITLE, MIN_SALARY, MAX_SALARY
+    FROM HR.JOBS),
+department_names AS(
+    SELECT DEPARTMENT_ID, DEPARTMENT_NAME
+    FROM HR.DEPARTMENTS)
+SELECT emp_table.FIRST_NAME,
+       emp_table.LAST_NAME,
+       emp_table.JOB_ID,
+       job_titles.JOB_TITLE,
+       job_titles.MIN_SALARY,
+       job_titles.MAX_SALARY,
+       emp_table.DEPARTMENT_ID,
+       department_names.DEPARTMENT_NAME
+FROM emp_table, department_names, job_titles
+WHERE emp_table.DEPARTMENT_ID = department_names.DEPARTMENT_ID 
+AND    emp_table.JOB_ID = job_titles.JOB_ID
